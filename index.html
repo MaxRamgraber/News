@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News reel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: transparent;
+        }
+
+        .carousel-caption {
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+            color: #fff;
+        }
+
+        .carousel-control.left,
+        .carousel-control.right {
+            color: #00A6D6;
+            background-image: none !important;
+            filter: none !important;
+        }
+
+        .carousel-control {
+            position: fixed; /* Fix the navigation controls to the screen */
+            top: 50%; /* Center them vertically */
+            transform: translateY(-50%); /* Adjust position to exactly center */
+            z-index: 1000; /* Ensure they are on top of other content */
+            color: #00A6D6;
+            background-image: none !important;
+            filter: none !important;
+            width: 10%;
+        }
+
+        .carousel .carousel-indicators li {
+            border: none;
+            background-color: #7ccfe7;
+        }
+
+        .carousel .carousel-indicators li.active {
+            border: none;
+            background-color: #00A6D6;
+        }
+
+        .carousel-indicators {
+            position: fixed; /* Fix the carousel indicators as well */
+            bottom: 10px; /* Adjust position to bottom */
+            z-index: 1000;
+        }
+
+        h2 {
+            color: #00A6D6;
+            font-family: Arial;
+            font-size: 160%;
+            font-weight: bold;  
+            line-height: 100%;
+            margin-bottom: 2%;
+            margin-top: 0px;
+        }
+
+        h3 {
+            color: darkgrey;
+            font-family: Arial;
+            font-size: 140%;
+            line-height: 100%;
+            margin-bottom: 2%;
+            margin-top: 0px;
+        }
+
+        p {
+            font-family: Arial;
+            font-size: 120%;
+        }
+
+        .grid {
+            height: 100%;
+            width: 100vw;
+            overflow-y: hidden;  /* This hides vertical scrollbar */
+            overflow-x: hidden;  /* This hides horizontal scrollbar */
+            text-align: justify;
+            text-justify: inter-word;
+            font-family: Helvetica;
+            font-size: 100%;
+            grid-area: s2;
+            padding-top: 0%;    /* No padding at the top */
+            padding-bottom: 0%; /* No padding at the bottom */
+            padding-left: 10%;   /* Add padding only on the left */
+            padding-right: 10%;  /* Add padding only on the right */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(91.8, 93.7, 94.9, 0));  /* Gradient masking */
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(91.8, 93.7, 94.9, 1));
+        }
+        
+        .grid::-webkit-scrollbar {
+            display: none;  /* Hides scrollbar in WebKit browsers (Chrome, Safari) */
+        }
+        
+        .grid p img {
+            float: left; /* or right */
+            margin-right: 15px; /* space between the image and the text */
+            max-width: 30%; /* adjust size if needed */
+            height: auto;
+        }
+        
+        .grid p {
+            overflow: hidden; /* clear floats */
+        }
+
+        .grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .grid::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myCarousel" class="carousel slide lazy" data-interval="false">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+            <li data-target="#myCarousel" data-slide-to="9"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" background-color: "lightblue">
+
+            <div class="item active">
+                <div class="grid">
+                    <h3>July 2024</h3>
+                    <h2>NWO Career grant | Veni</h2>
+                    <p><img style="height: auto; width: 30%; object-fit: contain" src="https://filelist.tudelft.nl/CiTG/Over%20faculteit/Afdelingen/Geoscience%20Engineering/Reservoir%20Engineering/Test/geothermics_small.webp">I am very happy to announce that my Veni project ASCEND (<b>A</b>dvancing <b>S</b>ubsurface <b>C</b>haracterization via <b>E</b>nsemble <b>N</b>onlinear <b>D</b>ata assimilation) has been granted! In this project, I will research adaptation and localization strategies that can render ensemble transport filters significantly more efficient. This will yield more reliable subsurface characterizations, which will improve the safety and efficiency of many important operations for the energy transition, from geothermal engineering to hydrogen storage. I am also currently hiring a PhD on related topics. If you are interested, or know someone who may be, click <a href="https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures/details?jobId=18151">here</a>.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="grid">
+                    <h3>July 2024</h3>
+                    <h2>PhD vacancy on Nonlinear Data Assimilation</h2>
+                    <p>I am hiring! Are you passionate about advancing the energy transition? Are you curious about methods that will help us to learn more about the subsurface? Together with my colleagues Berent Lunde and Femke Vossepoel, I am looking for a motivated PhD student to join our project on adaptive nonlinear data assimilation in subsurface systems. In this collaboration between Delft University of Technology and Equinor, we will develop an exciting new framework to improve our understanding of complex subsurface environments, crucial for safe drinking water, geothermal energy, and hydrogen storage. If you are interested, or know someone who may be, click <a href="https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures/details?jobId=18151">here</a>.</p>
+                </div>
+            </div>
+
+            <!-- Additional slides omitted for brevity -->
+        
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+</body>
+
+</html>
